@@ -1,5 +1,11 @@
 class profile::base {
-
-  #the base profile should include component modules that will be on all nodes
-
+  registry_key { 'HKLM\Software\Demo':
+    ensure => present,
+  }
+  
+  registry_value { 'HKLM\Software\Demo\MyValue':
+    ensure => present,
+    type   => string,
+    data   => "The Puppet Agent service periodically manages your configuration",
+  }  
 }
