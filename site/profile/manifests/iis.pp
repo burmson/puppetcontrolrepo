@@ -42,6 +42,10 @@ class profile::iis {
     ensure => 'present',  
   } ->
 
+  iis_site { 'Default Web Site':
+    ensure          => 'absent'
+  } ->
+    
   iis_site { 'minimal':
     ensure          => 'started',
     physicalpath    => 'c:\\inetpub\\minimal',
