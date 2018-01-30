@@ -38,7 +38,7 @@ class profile::iis {
       'Web-Windows-Auth',
     ]
 
-  iis_feature { $iis_features:
+  windowsfeature { $iis_features:
     ensure => 'present',  
   } ->
 
