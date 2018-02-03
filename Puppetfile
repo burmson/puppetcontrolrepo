@@ -11,7 +11,7 @@ mod 'puppetlabs-registry', '1.1.4'
 mod 'puppetlabs-chocolatey', '3.0.0'
 mod 'puppetlabs-powershell', '2.1.3'
 mod 'puppet-windowsfeature', '3.1.0'
-
+mod 'puppetlabs-sqlserver', '2.1.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
