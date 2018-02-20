@@ -3,6 +3,8 @@ class profile::base {
     ensure => present,
   }
   
+  include chocolatey
+  
   registry_value { 'HKLM\Software\Demo\MyValue':
     ensure => present,
     type   => string,
