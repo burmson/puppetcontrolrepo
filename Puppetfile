@@ -9,8 +9,11 @@ mod 'puppetlabs-reboot', '1.2.1'
 mod 'puppetlabs-iis', '4.2.1'
 mod 'puppetlabs-registry', '1.1.4'
 mod 'puppetlabs-powershell', '2.1.3'
-mod 'puppet-windowsfeature', '3.1.0'
+mod 'puppet-windowsfeature', '3.2.0'
 mod 'puppetlabs-sqlserver', '2.1.0'
+mod 'puppet-visualstudio', '3.0.1'
+mod 'puppet-dotnet', '2.0.0'
+mod 'puppetlabs-reboot', '2.0.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
