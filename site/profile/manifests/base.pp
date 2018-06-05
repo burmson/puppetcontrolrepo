@@ -1,7 +1,7 @@
 class profile::base {
-  exec { 'Get Dtc':
-    command   => 'Get-Dtc',
-    provider  => powershell,
+  windowsfeature { 'AS-Dist-Transaction':
+    ensure             => present,
+    installsubfeatures => true,
   }
 
   registry_key { 'HKLM\Software\CoverysPuppetTrainingDemo':
