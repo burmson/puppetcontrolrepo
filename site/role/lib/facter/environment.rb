@@ -1,6 +1,6 @@
 Facter.add(:environment) do
     setcode do
-        case Facter.value(:hostname)
+        case Facter.value(:hostname).downcase
         when /^acc-dev-/, /^nc-dev-/ then 'dev'
         when /^acc-dev/, /^nc-sql-vmdev/ then 'smoketest'    
         when /^acc-stest/, /^cov-ba/, /^nc-app-balfix/, /^nc-app-pds/, /^acc-sql-bsa/, /^acc-sql-stest/, /^nc-qa/, /^nc-sql-pds/, /^nc-sql-stest/ then 'qa'
